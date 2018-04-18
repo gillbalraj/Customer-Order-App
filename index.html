@@ -4,28 +4,15 @@
         <title>Accomplishments</title> 
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="#" />
-        <link href="style/style.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="style/style.css" rel="stylesheet" type="text/css"/>-->
     </head>
-    <body ng-controller="eventsController">
-       <h2>History</h2>
-     Filter:   <input type='text' ng-model='header.Place'>   
-    <table class="table table-striped">
-        <tr>
-        <th ng-click="doSort('Date')">Date</th>
-        <th ng-click="doSort('Place')">Place</th>
-        <th ng-click="doSort('Level')">Level</th></tr> 
-        <tr ng-repeat="eve in events | filter:header | orderBy:sortBy:reverse">
-            <td>{{eve.Date}}</td>
-            <td>{{eve.Place}}</td>
-            <td>{{eve.Level}}</td>
-        </tr>
-        
-    </table>
+    <body>
+        <div ng-view></div>
             <script src="scripts/angular.js"></script> 
-           
+            <script src="scripts/ngRoute.js"></script>
+            <script src="scripts/ngAnimate.js"></script> 
             <script src="app.js"></script>
             <script src="controllers/eventsController.js"></script>
-             <!--<script src="scripts/ngRoute.js"></script>--> 
-            <script src="scripts/ngAnimate.js"></script> 
+            
     </body>
 </html>
