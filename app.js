@@ -7,6 +7,10 @@
                     controller: 'eventsController',
                     templateUrl:'view/events.html'
                 })
+                .when('/details/:eveId',{
+                    controller: 'detailsController',
+                    templateUrl:'view/details.html'
+                })
                .otherwise({redirectTo: '/'});
-   })
+   });
 }());
