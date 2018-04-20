@@ -1,4 +1,4 @@
-/*.slide-animation.ng-enter, .slide-animation.ng-leave{
+.slide-animation.ng-enter, .slide-animation.ng-leave{
     transition: 0.5s linear all;
     position: relative;
     height: 1000px;
@@ -52,4 +52,4 @@
 }
 .repeat-animate.ng-move.ng-move-active{
     opacity: 1;
-}*/
+}

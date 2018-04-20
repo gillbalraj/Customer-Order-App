@@ -1,5 +1,5 @@
  <h2>History</h2>
-     <!--Filter:   <input type='text' ng-model='header.Place'>-->   
+     Filter:   <input type='text' ng-model='header.Title'>   
     <table class="table table-striped">
         <tr>
         <th ng-click="doSort('Title')">Title</th>   
@@ -8,7 +8,7 @@
         <th ng-click="doSort('Level')">Level</th>
         <th>&nbsp;</th>
         </tr> 
-        <tr ng-repeat="eve in events | filter:header | orderBy:sortBy:reverse">
+        <tr ng-repeat="eve in events | filter:header | orderBy:sortBy:reverse" class="repeat-animate">
             <td>{{eve.Title}}</td>
             <td>{{eve.Date}}</td>
             <td>{{eve.Place}}</td>
