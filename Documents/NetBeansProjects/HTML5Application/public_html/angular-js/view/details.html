@@ -1,0 +1,12 @@
+<h2>{{info.Title}}`s Info</h2>
+<table class="table table-striped">
+    <tr>
+    <th ng-click="">Organization</th>
+     <th ng-click="">Subjects</th>  
+    </tr>
+    <tr ng-repeat="dtl in info.Detail">
+        <td>{{dtl.Organization}}</td>
+        <td>{{dtl.Subjects}}</td>
+        
+    </tr>
+</table>
