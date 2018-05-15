@@ -9,7 +9,7 @@
     };
     
     factory.getDetails = function(eveId){
-        return $http.get('/events/' + eveId)
+        return $http.get('/events/' + eveId);
     };
      return factory;
     
