@@ -1,5 +1,9 @@
 (function(){
+<<<<<<< HEAD
     var app = angular.module('infoApp',['ngRoute','ngAnimate']);
+=======
+    var app = angular.module('infoApp',['ngRoute']);
+>>>>>>> 1a79bf4a48c72985cffbc582a22392261f07cb79
     
    app.config(function($routeProvider){
        $routeProvider
